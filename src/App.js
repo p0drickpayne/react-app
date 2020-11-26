@@ -1,10 +1,10 @@
 import React from 'react'
-import Greeting from './Greeting'
+import RouterComponent from './Router'
 
 
 function App() {
   return (
-    <div><Greeting name="Bob"/></div>
+    <RouterComponent />
     
   )
 
