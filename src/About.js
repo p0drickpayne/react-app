@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Axios from './Axios'
-import styled from 'styled-components'
+import Styled from 'styled-components'
 
-const Paragraph = styled.p`
+const Paragraph = Styled.p`
   text-decoration: underline;
 `
 

@@ -5,6 +5,8 @@ import {
     Link
 }   from "react-router-dom";
 import AboutPage from './About'
+import ContactPage from './Contact'
+import HomePage from './Home'
 
 function RouterComponent(){
       return(
@@ -19,7 +21,7 @@ function RouterComponent(){
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/users">Users</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -33,8 +35,8 @@ function RouterComponent(){
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/users">
-              <Users />
+            <Route path="/contact">
+              <Contact />
             </Route>
           </Switch>
         </div>
@@ -43,15 +45,15 @@ function RouterComponent(){
   }
   
   function Home() {
-    return <h2>Home</h2>;
+    return <HomePage />
   }
   
   function About() {
     return <AboutPage name="Jakob" />
   }
   
-  function Users() {
-    return <h2>Users</h2>;
+  function Contact() {
+    return <ContactPage />
   }
       
   export default RouterComponent
